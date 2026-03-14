@@ -1,0 +1,10 @@
+.fade-section{
+    opacity: 0;
+    transform: translateY(60px);
+    transform: all 0.8s ease-out;
+}
+
+.fade-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}

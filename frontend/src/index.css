@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+
+@keyframes gradientMove{
+
+
+  0%{background-position: 0%;}
+  50%{background-position: 100%;}
+  100%{background-position: 0%;}
+  
+    }
+
+.animate-gradient{
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+}
+
+.fade-section{
+    opacity: 0;
+    transform: translateY(60px);
+    transform: all 0.8s ease-out,transform 0.8s ease-out;
+}
+
+.fade-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
