@@ -21,7 +21,8 @@ export const register = async (req,res) => {
 
     }catch(err){
 
-        res.status(500).json(err)
+        console.error("Register error:",err)
+        res.status(500).json({message:err.message})
 
     }
 }
@@ -54,7 +55,8 @@ export const login = async (req,res) => {
 
     }catch(err){
 
-        res.status(500).json(err)
+        console.error("Login Error:",err)
+        res.status(500).json({message:err.message})
 
     }
 }
