@@ -27,7 +27,7 @@ export default function Upload() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/upload", {
+      const res = await fetch("/api/upload", {
         method: "POST",
         headers:{
             Authorization : `Bearer ${token}`

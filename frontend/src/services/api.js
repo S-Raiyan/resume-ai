@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/auth"
+const API="/api/auth"
 
 export const registerUser = async (userData) =>{
     const res = await fetch(`${API}/register`,{

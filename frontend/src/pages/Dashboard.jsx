@@ -16,7 +16,7 @@ export default function Dashboard(){
 
     const token = localStorage.getItem("token")
 
-    await fetch(`http://localhost:5000/api/delete/${id}`,{
+    await fetch(`/api/delete/${id}`,{
       method:"DELETE",
       headers:{
         Authorization:`Bearer ${token}`
@@ -33,7 +33,7 @@ export default function Dashboard(){
 
       const token = localStorage.getItem("token")
 
-      const res = await fetch("http://localhost:5000/api/history",{
+      const res = await fetch("/api/history",{
         headers:{
           Authorization:`Bearer ${token}`
         }
