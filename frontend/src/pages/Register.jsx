@@ -29,7 +29,7 @@ export default function Register(){
       
       localStorage.setItem("userName",username)
 
-      console.log("userName")
+
 
       navigate("/dashboard")
 
